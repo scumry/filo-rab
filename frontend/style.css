@@ -1,101 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-}
-
+/* Стиль для основного контейнера */
 .wrapper {
-    min-width: 100%;
-}
-
-main {
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    height: 100vh;
 }
 
-.form-id {
-    margin-top: 200px;
-}
-
-#uploadForm {
-    display: none;
-    margin-top: 50px;
-}
-
-.no-file-text {
-    color: rgb(102, 0, 0);
-    font-size: 50px;
-    margin-top: 20px;
-}
-
-.file-text {
-    color: rgb(0, 168, 98);
-    font-size: 50px;
-    margin-top: 20px;
-}
-
-.no-file {
-    display: none;
-}
-
-.registration {
-    display: none;
-}
-
+/* Стиль для формы регистрации */
 #my-form {
-    display: block;
+    width: 300px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-.my-files {
-    width: 100%;
-    margin-left: 20px;
-    margin-top: 50px;
-}
-
-.viewFiles {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-
-.files-user {
-    display: flex;
-    align-items: center;
+/* Стиль для элементов внутри формы */
+.email-form,
+.login-form,
+.password-form {
     margin-bottom: 10px;
 }
 
-.files-user img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    border-radius: 50%;
+/* Стиль для текста формы */
+.file-text-form {
+    margin: 0;
 }
 
-.files-user span {
-    font-size: 18px;
-    color: #333;
+/* Стиль для полей ввода */
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-.files-user button {
-    margin-left: auto;
-    background-color: #333;
-    color: #fff;
+/* Стиль для кнопки */
+.file-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
     border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
+    color: white;
     cursor: pointer;
+    border-radius: 3px;
 }
 
-.files-user button:hover {
-    background-color: #555;
+/* Стиль для контейнера ошибки регистрации */
+.error-register {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Стиль для формы входа */
+#my-form-login {
+    margin-top: 20px;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 500px) {
+    #my-form {
+        width: 90%;
+    }
 }
