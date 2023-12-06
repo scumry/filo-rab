@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/style.css">
+    <title>file</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <main>
+                <form id="my-form">
+                    <div class="email-form">
+                        <label>
+                            <p class="file-text-form">Email:</p>
+                            <input id="email" name="email">
+                        </label>
+                    </div>
+                    <div class="login-form">
+                        <label>
+                            <p class="file-text-form">Логин:</p>
+                            <input id="login" name="login">
+                        </label>
+                    </div>
+                    <div class="password-form">
+                        <label>
+                            <p class="file-text-form">Пароль:</p>
+                            <input id="password" name="password">
+                        </label>
+                    </div>
+
+                    <div class="button-box">
+                        <button class="file-button" type="submit" id="submit">Зарегистрироваться</button>
+                    </div>
+                </form>
+
+                <div class="error-register"></div>
+
+                <form id="my-form-login">
+                    <div class="log-text-box">
+                        <span class="login-text">
+                            Войти
+                        </span>
+                    </div>
+                    <div class="login-form">
+                        <label>
+                            <p class="file-text-form">Логин:</p>
+                            <input id="login-log" name="login-log">
+                        </label>
+                    </div>
+                    <div class="password-form">
+                        <label>
+                            <p class="file-text-form">Пароль:</p>
+                            <input id="password-log" name="password-log">
+                        </label>
+                    </div>
+
+                    <div class="button-box">
+                        <button class="file-button" type="submit" id="submit">Войти</button>
+                    </div>
+                    <div class="error-login"></div>
+                </form>
+
+                <button id="btn-clear-token">Выйти с аккаунта</button>
+
+                <div class="no-file">
+                    <span class="no-file-text">Вы не зарегистрированы</span>
+                </div>
+                <div class="file">
+                    <span class="file-text">Вы зарегистрированы</span>
+                </div>
+
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <input type="file" name="file" id="fileInput">
+                    <button type="submit">Загрузить</button>
+                </form>
+
+                <div class="my-files">
+                    <span class="my-files-text">Мои файлы:</span>
+                </div>
+
+                <div class="viewFiles"></div>
+            </main>
+        </div>
+    </div>
+    <script src="/frontend/registration.js"></script>
+<script src="/frontend/login.js"></script>
+    <script src="/frontend/view.js"></script>
+</body>
+</html>
+```

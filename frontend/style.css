@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.wrapper {
+    min-width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-id {
+    margin-top: 200px;
+}
+
+#uploadForm {
+    display: none;
+    margin-top: 50px;
+}
+
+.no-file-text {
+    color: rgb(102, 0, 0);
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.file-text {
+    color: rgb(0, 168, 98);
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.no-file {
+    display: none;
+}
+
+.registration {
+    display: none;
+}
+
+#my-form {
+    display: block;
+}
+
+.my-files {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.viewFiles {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.files-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.files-user img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.files-user span {
+    font-size: 18px;
+    color: #333;
+}
+
+.files-user button {
+    margin-left: auto;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.files-user button:hover {
+    background-color: #555;
+}
